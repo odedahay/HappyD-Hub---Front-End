@@ -1,12 +1,12 @@
 body {
-  background: #f9f9f9;
+  background-color: #f9f9f9 !important;
   color: #333333; }
 
 /***** login styles *****/
 .bg-header-login {
-  background: url("../img/bg-header-login.jpg") repeat-x top left;
+  background: url("../img/bg-header-login.png") repeat-x top left !important;
   width: 100%;
-  height: 21px; }
+  height: 25px; }
 
 .upperText {
   text-transform: uppercase; }
@@ -17,15 +17,6 @@ body {
 .required {
   color: red; }
 
-.btn-primary {
-  color: #fff;
-  background-color: #028482;
-  border-color: #028482; }
-
-.btn-primary:hover {
-  background-color: #0e8e8c;
-  border-color: #0e8e8c; }
-
 #login h4 {
   font-size: 18px;
   line-height: 22px;
@@ -34,12 +25,11 @@ body {
   padding-bottom: 20px; }
 
 /***** Dashsboard styles *****/
-/*.page {
-  overflow-x: hidden;
-}*/
 .bg-greenHub {
-  background-color: #66af66 !important; 
-}
+  background: #66af66 !important; }
+
+.bg-green {
+  background-color: #66af66 !important; }
 
 nav.navbar .search-box {
   width: 100%;
@@ -53,16 +43,6 @@ nav.navbar .search-box {
   border-radius: 0;
   display: none; }
 
-/*
-=========================================
-=========================================
-
-Bootstrap 4 Admin Template
-
-https://bootstrapious.com/p/admin-template
-
-=========================================
-========================================= */
 /*
 * ==========================================================
 *     GENERAL STYLES
@@ -165,10 +145,10 @@ button, input {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px 0 2px rgba(0, 0, 0, 0.05); }
 
 .card-header {
-  background: #f9f9f9;
+  background: #fff;
   padding: 15px;
   border-bottom: 1px solid #eee;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0); }
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.05); }
 
 .card-header h1, .card-header h2, .card-header h3, .card-header h4, .card-header h5, .card-header h6 {
   margin-bottom: 0; }
@@ -510,13 +490,13 @@ nav.side-navbar.shrinked .sidebar-header .title {
 * ==========================================================
 */
 nav.navbar {
-  background: #2f333e;
+  background: #6bb76b;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
   position: relative;
   border-radius: 0;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);*/
   z-index: 9999;
   padding-left: 0;
   padding-right: 0;
@@ -629,7 +609,8 @@ nav.navbar .search-box form {
 nav.navbar .search-box form input {
   height: 100%;
   border: none;
-  padding: 20px; }
+  padding: 20px;
+  box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.8); }
 
 nav.navbar .dropdown-menu {
   right: 0;
@@ -656,7 +637,7 @@ nav.navbar .dropdown-menu a i {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background: #796AEE;
+  background: #028482;
   text-align: center;
   color: #fff;
   border-radius: 50%;
@@ -1199,6 +1180,11 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 *     FOOTER
 * ==========================================================
 */
+footer {
+  /*  position: absolute;
+  bottom: 0;
+  width: 100%;*/ }
+
 footer.main-footer {
   background: #2f333e;
   color: #fff;
@@ -1302,7 +1288,7 @@ section.charts div[class*="col-"] {
   color: #aaa; }
 
 .form-control:focus {
-  border-color: #796AEE; }
+  border-color: #028482; }
 
 .form-control-label {
   color: #777;
@@ -1710,15 +1696,15 @@ fieldset[disabled] a.btn {
 .btn-primary {
   color: #fff;
   background-color: #028482;
-  border-color: #037573; }
+  border-color: #027876; }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #269694;
-  border-color: #1f8c8a; }
+  background-color: #198a88;
+  border-color: #228281; }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 2px rgba(121, 106, 238, 0.5); }
+  box-shadow: 0 0 0 2px rgba(107, 183, 107, 0.5); }
 
 .btn-primary.disabled, .btn-primary:disabled {
   background-color: #796AEE;
@@ -2017,11 +2003,11 @@ body {
   background-color: #fff; }
 
 a {
-  color: #796AEE;
+  color: #247ba0;
   text-decoration: none; }
 
 a:focus, a:hover {
-  color: #3b25e6;
+  color: #247ba0;
   text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6,
@@ -2161,19 +2147,13 @@ a.text-primary:focus, a.text-primary:hover {
   border-bottom-right-radius: 0.2rem;
   border-top-right-radius: 0.2rem; }
 
+/*
+* ==========================================================
+*     Page STYLES
+* ==========================================================
+*/
+.error-message {
+  color: #d71313; }
 
-h2.dashboardStyle{
-  font-size: 2.5rem !important;
-  font-weight: 300;
-}
-
-/*====== Upload Table Box ======*/
-
-table.tabstyle01 th{
-      font-size: .85em;
-    font-weight: 400;
-    color: #66af66;
-    text-transform: uppercase;
-}
-
-
+.small-content {
+  min-height: 600px; }

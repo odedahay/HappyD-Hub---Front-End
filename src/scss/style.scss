@@ -3,55 +3,45 @@ $bg-login:#7aba7a;
 $btn-primary-color:#028482;
 
 body{
-	background: #f9f9f9;
-	color: #333333;
+  background-color:#f9f9f9 !important;
+  color: #333333;
 }
 
 /***** login styles *****/
 
 .bg-header-login{
-	background: url('../img/bg-header-login.jpg') repeat-x top left;
-	width: 100%;
-	height: 21px;
+  background: url('../img/bg-header-login.png') repeat-x top left !important;
+  width: 100%;
+  height: 25px;
 }
 .upperText {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .smallText{
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .required{
-	color: red;
+  color: red;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: $btn-primary-color;
-    border-color: $btn-primary-color;
-}
-
-.btn-primary:hover {
-	background-color: #0e8e8c;
-	border-color: #0e8e8c;
-}
 
 #login h4{
-	font-size: 18px;
-	line-height: 22px;
-	text-transform: uppercase;
-	color: #777777;
-	padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #777777;
+  padding-bottom: 20px;
 }
 
 /***** Dashsboard styles *****/
-
-/*.page {
-  overflow-x: hidden;
-}*/
-.bg-green{
-	background-color: #66af66 !important;
+.bg-greenHub{
+  background: #66af66 !important;
 }
+.bg-green{
+  background-color: #66af66 !important;
+}
+
 
 nav.navbar .search-box {
     width: 100%;
@@ -67,16 +57,6 @@ nav.navbar .search-box {
 }
 
 
-/*
-=========================================
-=========================================
-
-Bootstrap 4 Admin Template
-
-https://bootstrapious.com/p/admin-template
-
-=========================================
-========================================= */
 /*
 * ==========================================================
 *     GENERAL STYLES
@@ -531,7 +511,7 @@ nav.side-navbar.shrinked a {
   padding: 15px 10px;
   border: none;
   font-size: 0.8em;
-  color: #aaa;
+  color: #fff;
   transition: color 0.3s, background 0.3s;
 }
 
@@ -563,7 +543,7 @@ nav.side-navbar.shrinked a i {
   margin-bottom: 5px;
   display: block;
   font-size: 1.6em;
-  color: #333;
+  color: #fff;
   transition: color 0.3s;
 }
 
@@ -636,13 +616,13 @@ nav.side-navbar.shrinked .sidebar-header .title {
 * ==========================================================
 */
 nav.navbar {
-  background: #2f333e;
+  background: #6bb76b;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #fff;
   position: relative;
   border-radius: 0;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);*/
   z-index: 9999;
   padding-left: 0;
   padding-right: 0;
@@ -775,6 +755,7 @@ nav.navbar .search-box form input {
   height: 100%;
   border: none;
   padding: 20px;
+  box-shadow: 0 0 0 2px rgba(92, 184, 92, 0.8);
 }
 
 nav.navbar .dropdown-menu {
@@ -805,7 +786,7 @@ nav.navbar .dropdown-menu a i {
   width: 30px;
   height: 30px;
   line-height: 30px;
-  background: #796AEE;
+  background: #028482;
   text-align: center;
   color: #fff;
   border-radius: 50%;
@@ -1074,7 +1055,7 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
   margin-right: 15px;
 }
 .progress{
-	height: 5px;
+  height: 5px;
 }
 
 .project .time, .project .comments, .project .project-progress {
@@ -1472,6 +1453,12 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 *     FOOTER
 * ==========================================================
 */
+footer{
+/*  position: absolute;
+  bottom: 0;
+  width: 100%;*/
+  }
+
 footer.main-footer {
   background: #2f333e;
   color: #fff;
@@ -1593,7 +1580,7 @@ section.charts div[class*="col-"] {
 }
 
 .form-control:focus {
-  border-color: #796AEE;
+  border-color: #028482;
 }
 
 .form-control-label {
@@ -2079,18 +2066,18 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #796AEE;
-  border-color: #796AEE;
+  background-color: #028482;
+  border-color: #027876;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #503ce9;
-  border-color: #4833e8;
+  background-color: #198a88;
+  border-color: #228281;
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 2px rgba(121, 106, 238, 0.5);
+  box-shadow: 0 0 0 2px rgba(107, 183, 107, 0.5);
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2450,12 +2437,12 @@ body {
 }
 
 a {
-  color: #796AEE;
+  color: #247ba0;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #3b25e6;
+  color: #247ba0;
   text-decoration: underline;
 }
 
@@ -2624,5 +2611,19 @@ a.text-primary:focus, a.text-primary:hover {
 .pagination-sm .page-item:last-child .page-link {
   border-bottom-right-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
+}
+
+/*
+* ==========================================================
+*     Page STYLES
+* ==========================================================
+*/
+
+.error-message {
+  color: #d71313;
+}
+
+.small-content{
+  min-height: 600px;
 }
 
