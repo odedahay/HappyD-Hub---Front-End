@@ -767,6 +767,25 @@ section.dashboard-counts div[class*='col-'] .item {
 section.dashboard-counts div[class*='col-']:last-of-type .item {
   border-right: none; }
 
+.section-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  margin: 0 20px 20px 10px; }
+
+.card-title {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #333; }
+
+p.card-text-newly {
+  color: #333 !important;
+  font-weight: 300; }
+
+a.card-link-newly {
+  padding-top: 20px;
+  font-size: .9em; }
+
 /*  DASHBOARD COUNTS MEDIAQUERIES ------------------------ */
 @media (max-width: 1200px) {
   section.dashboard-counts div[class*='col-']:nth-of-type(2) .item {
@@ -1099,7 +1118,8 @@ section.dashboard-counts div[class*='col-']:last-of-type .item {
 .recent-updates p {
   font-size: 0.8em;
   color: #aaa;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding: 10px 50px 0 0; }
 
 .recent-updates .date {
   font-size: 0.9em;
