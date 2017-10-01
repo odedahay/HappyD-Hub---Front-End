@@ -10,11 +10,11 @@
     	<link rel="shortcut icon" href="img/favicon.ico">
 		 <!-- Google fonts - Roboto -->
     	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+      
+		  <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/style.css">
         
-
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
        
         <!-- you can replace it by local Font Awesome-->
     	<script src="https://use.fontawesome.com/99347ac47f.js"></script>
@@ -51,33 +51,32 @@
 		              </div>
 		          	</div>
 
-		          	
-                <!-- Navbar Menu -->
-                  <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                    <!-- Search-->
-                    <li class="nav-item d-flex align-items-center">
-                      <a id="search" href="#"><i class="icon-search"></i></a>
-                    </li>
+		          	<!-- Navbar Menu -->
+		              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+		                <!-- Search-->
+		                <li class="nav-item d-flex align-items-center">
+		                	<a id="search" href="#"><i class="icon-search"></i></a>
+		                </li>
 
-                    <li class="nav-item dropdown mr-3">
+		                <li class="nav-item dropdown mr-3">
                     <a href="#" class="nav-link">
-                    <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> -->
-                      <i class="feed-profile-header"> <img src="img/avatar-3.jpg" alt="person" class="img-fluid rounded-circle"></i> Welcome Ode
-                    </a>
+				            <!-- <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> -->
+				              <i class="feed-profile-header"> <img src="img/avatar-3.jpg" alt="person" class="img-fluid rounded-circle"></i> Welcome Ode
+				            </a>
 
-                   <!--  <div class="dropdown-menu">
-                      <a href="profile.html" class="dropdown-item">
-                        <i class="fa fa-user-circle"></i> Profile
-                      </a>
-                      <a href="settings.html" class="dropdown-item">
-                        <i class="fa fa-gear"></i> Settings
-                      </a>
-                      <a href="/logout" class="dropdown-item">
-                        <i class="fa fa-user-times"></i> Logout
-                      </a>
-                    </div> -->
-                    </li>
-                  </ul> 
+				           <!--  <div class="dropdown-menu">
+				              <a href="profile.html" class="dropdown-item">
+				                <i class="fa fa-user-circle"></i> Profile
+				              </a>
+				              <a href="settings.html" class="dropdown-item">
+				                <i class="fa fa-gear"></i> Settings
+				              </a>
+				              <a href="/logout" class="dropdown-item">
+				                <i class="fa fa-user-times"></i> Logout
+				              </a>
+				            </div> -->
+				            </li>
+		              </ul>
 
 		          </div><!-- / container-fluid -->      
 			</nav>
@@ -92,19 +91,16 @@
           
           <!-- Sidebar Navidation Menus-->
           <ul class="list-unstyled">
-            <li > <a href="dashboard.html"><i class="icon-home"></i><span>Dashboard</span></a></li>
-            <li> <a href="courses.html"> <i class="icon-grid"></i><span>Courses / Materials</span> </a></li>
-            <li> <a href="school.html"> <i class="fa fa-bar-chart"></i><span>Schools </a></span></li>
-            <li class="active"> <a href="teachers.html"> <i class="icon-padnote"></i><span>Teachers</span> </a></li>
+            <li class="active"> <a href="dashboard.html"><i class="icon-home"></i><span>Dashboard</span></a></li>
+            <li> <a href="courses.html"> <i class="icon-grid"></i><span>Instruction Materials</span> </a></li>
+            <li> <a href="school.html"> <i class="fa fa-list" aria-hidden="true"></i><span>Courses </a></span></li>
             <li> <a href="annoucement.html"> <i class="icon-interface-windows"></i><span>Annoucement</span></a></li>
-            <li> <a href="sys-admin-access-levels.html"> <i class="fa fa-universal-access" aria-hidden="true"></i><span>Access Levels</span></a></li>
-            <li> <a href="sys-admin-users.html"> <i class="fa fa-user-circle" aria-hidden="true"></i><span>Users</span></a></li>
-            <li> <a href="change-password.html"> <i class="fa fa-exchange" aria-hidden="true"></i><span>Change Password<span></a></li>
             <li> <a href="/logout"> <i class="fa fa-sign-out" aria-hidden="true"></i><span>Logout<span></a></li>
           </ul>
 
-
         </nav>
+
+      
         <div class="content-inner">
 
 
@@ -117,19 +113,19 @@
                 <li class="breadcrumb-item active">Library</li>
               </ol>
 
-              <h2 class="no-margin-bottom dashboardStyle">Courses</h2>
+              <h2 class="no-margin-bottom dashboardStyle">Dashboard</h2>
             </div>
           </header>
 
 
-          <!-- New Upload Section -->
+          <!-- Annoucement Section -->
           <section class="normal-1">
             
 
             <div class="container-fluid">
               <div class="row">
-                <!-- School -->
-                <div class="col-lg-12">
+
+               <div class="col-lg-12">
                   
                   <div class="articles card">
 
@@ -170,12 +166,12 @@
                       <table class="table table-striped">
                         <thead>
                           <tr>
-                            <th>Image</th>
+                            <th>School</th>
+                            <th>Name</th>
                             <th>Course</th>
-                            <th>Unit</th>
-                            <th>Last Modified</th>
-                            <th>Total Downloads</th>
-                            <th></th>
+                            <th>Unit </th>
+                            <th>Type</th>
+                            <th>Date</th>
                             
                            
                           </tr>
@@ -183,66 +179,54 @@
                         <tbody>
                           <tr>
                             <td scope="row">
-                              <img src="img/avatar.png" alt="person" class="img-fluid rounded-circle" width="50px">
+                             Hope Christian High School
                             </td>
-                            <td>Learning Computers</td>
-                            <td>5</td>
-                            <td>Jan 5 2017</td>
-                            <td>15</td>
+                            <td>Jen Cruz</td>
+                            <td>Biology</td>
+                            <td>10</td>
+                            <td>PPTs</td>
                            
                             <td> 
-                               
-                              <div class="icon-size-l inline-icon">
-                                <a href="#" alt="?"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                              </div>
-                              <div class="icon-size-l inline-icon">
-                                <a href="#" alt="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                              </div>
-                              <div class="icon-size-l inline-icon">
-                                <a href="#" alt="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                              </div>
+                              Jan. 7 2018
                             </td>
                           </tr>
 
                           <tr>
                             <td scope="row">
-                              <img src="img/avatar.png" alt="person" class="img-fluid rounded-circle" width="50px">
+                             SCPS
                             </td>
-                            <td>Learning Computers</td>
-                            <td>5</td>
-                            <td>Jan 5 2017</td>
-                            <td>15</td>
+                            <td>Juan Dela Cruz</td>
+                            <td>Chimistry</td>
+                            <td>1</td>
+                            <td>PDF</td>
                            
                             <td> 
-                               
-                              <div class="icon-size-l inline-icon">
-                                <a href="#" alt="?"><i class="fa fa-bars" aria-hidden="true"></i></a>
-                              </div>
-                              <div class="icon-size-l inline-icon">
-                                <a href="#" alt="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                              </div>
-                              <div class="icon-size-l inline-icon">
-                                <a href="#" alt="Delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                              </div>
+                              Jan. 1 2018
                             </td>
                           </tr>
-                          
+
+                         
                           
                         </tbody>
                       </table>
 
                     </div>
                      <div class="card-footer d-flex justify-content-end">
-                       <span class="attention"><i class="fa fa-info-circle" aria-hidden="true"></i> Double-click on the cell to edit the content</span>
+                      <a href="#" class="btn btn-xs btn-secondary">
+                            <i class="fa fa-download" aria-hidden="true"></i> Download to Excel
+                          </a>
                      </div>
                   </div>
-                </div>
+                </div> <!-- end col-lg-12 -->
+            
                 
-                
-
             </div>
 
           </section> <!-- /container-fluid -->
+
+         
+
+         
           
           <!-- Page Footer-->
           <footer class="main-footer">
@@ -261,6 +245,7 @@
           </div>
           </div>
 
+       
       </div><!-- /page home-page -->
 		  
         <script src="js/jquery.min.js"></script>
@@ -269,7 +254,9 @@
         <script src="js/front.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="js/jquery.validate.min.js"></script>
-	    <script src="js/charts-home.js"></script>
+       <!--  <script src="js/charts-home.js"></script> -->
+  	   
+
 
     </body>
 
